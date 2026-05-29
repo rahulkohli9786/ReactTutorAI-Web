@@ -1,3 +1,7 @@
+import os
+# Fix for protobuf compatibility issue with Python 3.14
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 import streamlit as st
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
