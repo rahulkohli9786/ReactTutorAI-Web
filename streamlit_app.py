@@ -1,5 +1,6 @@
 import os
 # Fix for protobuf compatibility issue with Python 3.14
+# Force pure Python protobuf implementation to avoid C extension issues
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 import streamlit as st
