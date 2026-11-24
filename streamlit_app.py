@@ -23,7 +23,8 @@ def load_qa_chain():
     llm = ChatGroq(
         # model="llama3-8b-8192",
         # model="mixtral-8x7b-32768",
-        model="llama-3.3-70b-versatile",
+        # model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         api_key=st.secrets.get("GROQ_API_KEY"),
         temperature=0.7
     )
